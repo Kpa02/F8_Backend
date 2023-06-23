@@ -1,0 +1,19 @@
+Javascript
++ tất cả được đặt trong thẻ <script></script>
+
++ Quy tắc đặt tên 
+- Quy tắc camelCase 
+ VD: duongTrungKien
+
+=> Đặt Cho Biến ,Hàm
+
+- Quy tắc PasscalCase
+VD : DuongTrungKien
+
+=> Đặt tên cho Class (  Đầu mỗi từ viết hoa)
+
+- Quy Tắc underscore 
+
+VD : duong_trung_kien
+
+=> đặt tên trường dataabase , response api cho CSDL
