@@ -37,7 +37,15 @@ if (a * b < 0) {
 if (a * b > 0) {
   console.log(`a = ${a} và b = ${b} là hai số cùng dấu.`);
 }
-
+if ((a = b = 0)) {
+  console.log(`a = ${a} và b = ${b} là hai số cùng dấu.`);
+}
+if ((a = 0 && b > 0)) {
+  console.log(`a = ${a} và b = ${b} là hai số trái dấu.`);
+}
+if ((a = 0 && b < 0)) {
+  console.log(`a = ${a} và b = ${b} là hai số trái dấu.`);
+}
 //Bai 5 : Sắp xếp tăng dần.
 
 var a = 5,
