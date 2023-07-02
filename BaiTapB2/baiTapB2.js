@@ -12,7 +12,7 @@ if (soKm <= 0) {
 } else {
   tien = soKm * 11000 - 0.1 * (soKm * 11000);
 }
-console.log(`So tien taxi = ${tien} VNĐ`);
+console.log(`So tien taxi = ${tien.toFixed(2)} VNĐ`);
 
 // Bai 2: Tinh tien điện ;
 
@@ -23,9 +23,9 @@ if (kWh <= 0) {
 } else if (kWh <= 50) {
   TienDien = kWh * 1.678;
 } else if (kWh <= 100) {
-  TienDien = kWh * 1.734;
+  TienDien = (kWh - 50) * 1.734 + kWh * 1.678;
 } else if (kWh <= 200) {
-  TienDien = kWh * 2.014;
+  TienDien = (kWh - 100) * 2.014 + 50 * (1.734 + 1.678);
 } else if (kWh <= 300) {
   TienDien = kWh * 2.536;
 } else if (kWh <= 400) {
@@ -51,11 +51,11 @@ if (Number.isInteger(n) && n > 0) {
 // Kiểm tra số nguyên tố.
 
 var n = 8,
-  dem = 0;
+  cout = 0;
 if (Number.isInteger(n) && n > 0) {
   for (var i = 1; i <= n; i++) {
     if (n % i == 0) {
-      dem += 1;
+      cout += 1;
     }
   }
   if (dem == 2) {
