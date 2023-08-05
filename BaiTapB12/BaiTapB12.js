@@ -1,4 +1,3 @@
-import * as products from "./package.json";
 
 //Bai 1
 const readTime = function (mls) {
